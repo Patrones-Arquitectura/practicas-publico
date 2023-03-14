@@ -1,5 +1,6 @@
 FROM eclipse-temurin:11-jdk-alpine AS builder
 WORKDIR /opt/app/
+# La carpeta src debe contener los fuentes de la aplicación y debe estar al mismo nivel de filesystem que el Dockerfile
 COPY src src
 COPY gradle gradle
 COPY build.gradle settings.gradle gradlew ./
