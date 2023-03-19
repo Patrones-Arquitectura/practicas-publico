@@ -11,7 +11,7 @@
 
 1. Ir a [Spring initializr](https://start.spring.io/)
 2. Crear un proyecto con las siguientes opciones:
-   1. **Project:** Gradle - Groovy / Maven
+   1. **Project:** Gradle - Groovy
    2. **Language:** Java
    3. **Spring Boot:** Usar alguna de las versiones estables (3.0.4, 2.7.9)
    4. **Project Metadata:**
@@ -26,8 +26,6 @@
       3. H2 Database
       4. Opcionalmente, Spring Boot DevTools
 
-> El siguiente [link](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.7.9&packaging=jar&jvmVersion=11&groupId=ar.edu.unlp.pas&artifactId=ejercicio1&name=ejercicio1&description=Patrones%20de%20Arquitectura%20de%20Software%20-%20Ejercicio%201&packageName=ar.edu.unlp.pas.ejercicio1&dependencies=web,data-jpa,h2,devtools) tiene toda esa configuración cargada en el sitio
-
 3. Al hacer click en **Generate** se descarga un zip con el proyecto
 
 
@@ -37,18 +35,8 @@
 
 #### Instalar dependencias y compilar:
 
-* Con **gradle**
-
 ```sh
   ./gradlew clean build
-```
-
-> En la carpeta `./build` quedan los binarios compilados. Por ejemplo, `./build/libs/ejercicio1-0.0.1-SNAPSHOT.jar`
-
-* Con **maven**
-
-```sh
-  ./mvnw clean install
 ```
 
 > En la carpeta `./target` quedan los binarios compilados. Por ejemplo, `./target/ejercicio1-0.0.1-SNAPSHOT.jar`
@@ -57,16 +45,9 @@
 
 #### Ejecutar el proyecto
 
-* Con **gradle**
 
 ```sh
   ./gradlew bootRun
-```
-
-* Con **maven**
-
-```sh
-  ./mvnw spring-boot:run
 ```
 
 Por defecto, corre en el puerto 8080. Acceder mediante http://localhost:8080/. Como no tiene ninguna ruta configurada, va a mostrar un error **404 Not found**
