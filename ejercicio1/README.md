@@ -13,7 +13,7 @@
 2. Crear un proyecto con las siguientes opciones:
    1. **Project:** Gradle - Groovy
    2. **Language:** Java
-   3. **Spring Boot:** Usar alguna de las versiones estables (3.0.4, 2.7.9)
+   3. **Spring Boot:** Usar versiones 2.x.x, ya que Spring Boot 3 requiere Java 17
    4. **Project Metadata:**
       1. **Group:** ar.edu.unlp.pas
       2. **Artifact:** ejercicio1
